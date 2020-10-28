@@ -1,0 +1,44 @@
+#survey {
+    border: solid 3px black;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#survey button {
+    width: 150px;
+    height: 30px;
+    margin: 0px 0px 20px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#survey-question {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#survey-question fieldset{
+    margin: 20px 40% 0px 40%;
+}
+
+#survey-question #yesbtn{
+    margin-right: 20px;
+}
+
+#thank-you-page {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#thank-you-page button{
+    width: 150px;
+    height: 30px;
+    margin: 0px 0px 20px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}

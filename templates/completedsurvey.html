@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Thank You!{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    <div id="thank-you-page">
+        <h1>Thank You For Completing This Survey!</h1>
+        <form action="/">
+            <button type="submit">Go Home</button>
+        </form>
+    </div>
+{% endblock %}

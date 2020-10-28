@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Question {{question_num}}{% endblock %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+    <div id="survey-question">
+        <h1>{{ survey.questions[question_num].question }}</h1>
+        <form action="/answer" method="POST">
+            <input type="hidden" name="s" value="{{request.args.get('s')}}" /> 
+            {% for choice in survey.questions[question_num].choices %}
+                <p><input type="radio" name="answer" value="{{ choice }}"> {{ choice }}</p>
+            {% endfor %}
+            <button>Continue</button>
+        </form>
+    </div>
+{% endblock %}

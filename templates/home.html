@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    {%for survey in surveys%}
+    <div id="survey">
+        <h1>{{surveys[survey].title}}</h1>
+        <h3>{{surveys[survey].instructions}}</h3>
+        <form action="/questions/0">
+            <input type="hidden" name="s" value="{{survey}}" /> 
+            <button id="{{survey}}" type="submit">Begin Survey</button>
+        </form>
+    </div>
+    {% endfor %}
+{% endblock %}
