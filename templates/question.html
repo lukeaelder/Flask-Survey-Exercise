@@ -9,6 +9,9 @@
             {% for choice in survey.questions[question_num].choices %}
                 <p><input type="radio" name="answer" value="{{ choice }}"> {{ choice }}</p>
             {% endfor %}
+            {%if survey.questions[question_num].allow_text == true %}
+                <p><input type="text" placeholder="Enter answer" name="text-answer"></p>
+            {% endif %}
             <button>Continue</button>
         </form>
     </div>
